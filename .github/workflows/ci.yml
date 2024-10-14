@@ -533,6 +533,7 @@ jobs:
           # This playbook renders the documentation 
           # content for the website. It includes
           # master, develop, and tags.
+          set -xe
           npm ci
           npx antora antora-playbook.yml
           mkdir -p ../build/website/docs
@@ -552,7 +553,7 @@ jobs:
           # documentation content and visualize it
           # before a workflow that pushes to the
           # website is triggered.
-          set -x
+          set -xe
           npx antora antora-playbook.yml --attribute branchesarray=HEAD --stacktrace
           mkdir -p ../build/docs-local
           cp -r build/site/* ../build/docs-local
