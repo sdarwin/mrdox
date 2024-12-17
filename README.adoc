@@ -5,4 +5,3 @@ image::docs/modules/ROOT/images/MrDocsBanner.jpg[Mr. Docs Documentation,link=htt
 Visit the Mr. Docs Documentation website at https://www.mrdocs.com.
 
 
-
